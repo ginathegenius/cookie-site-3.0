@@ -1,0 +1,19 @@
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: #69A197;
+    color: white;
+    /* height: 50px; */
+    margin-bottom: 10vh;
+  }
+  
+  footer.fixed-bottom {
+    background-color: #69A197;
+    height: 10vh;
+}
+
+div.icons.col {
+  margin-top: calc(6vh/2);
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,26 @@
+/* src/AccordionFilter.css */
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+
+.accordion-body {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-check {
+    margin: 5px 0;
+}
