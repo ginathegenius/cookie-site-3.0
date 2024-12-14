@@ -8,7 +8,7 @@ import Cookies from "./containers/Cookies";
 export default function Routing() {
   return (
     <Routes>        
-      <Route path="/"  element={<Home/>} />
+      <Route path="/"  element={<Cookies/>} />
       <Route path="/cookie-library"  element={<Cookies />}/>
     </Routes>
   );

@@ -77,7 +77,6 @@ export default function Cookies() {
 
     return (
       <div className="ml-2">
-        <h2 className="page-header">Cookie Catalog</h2>
         <div>
               <FilterComponent
                 yearFilters={yearFilters}
