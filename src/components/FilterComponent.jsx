@@ -1,11 +1,16 @@
 import React from 'react';
 import Accordion from './Accordion'; // Import the Accordion component
+import { Container, Row, Col } from 'react-bootstrap';
 
 const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handleAllergyChange, flavorFilters, handleFlavorChange }) => {
     console.log({yearFilters})
     return (
+        
         <div>
-            <Accordion title="Year">
+            <Container fluid>
+                <Row>
+                    <Col>
+            <Accordion title="Year:">
                 {Object.keys(yearFilters).map((year) => (
                     <div key={year} className="form-check">
                     <label className="form-check-label" htmlFor={`flexCheckDefault${year}`}>
@@ -23,8 +28,9 @@ const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handle
                 ))}
 
             </Accordion>
-
-            <Accordion title="Exclude Allergens">
+            </Col>
+<Col>
+            <Accordion title="Exclude Allergens:">
                 {Object.keys(allergyFilters).map((allergy) => (
                     <div key={allergy} className="form-check">
                         <label className="form-check-label" htmlFor={`flexCheck${allergy}`}>
@@ -41,8 +47,9 @@ const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handle
                     </div>
                 ))}
             </Accordion>
-
-            <Accordion title="Include Flavors">
+            </Col>
+            <Col>
+            <Accordion title="Include Flavors:">
                 {Object.keys(flavorFilters).map((flavor) => (
                     <div key={flavor} className="form-check">
                         <label className="form-check-label" htmlFor={`flexCheck${flavor}`}>
@@ -60,6 +67,9 @@ const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handle
                     </div>
                 ))}
             </Accordion>
+            </Col>
+            </Row>
+            </Container>
         </div>
     );
 };

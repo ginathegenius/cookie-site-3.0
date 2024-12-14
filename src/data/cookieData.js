@@ -82,7 +82,7 @@ export const cookieData = [
   {
     name: "Pignoli (Italian Macaron)",
     allergies: ["pine nut", "almond", "eggs"],
-    link: "/pignoli",
+    link: "https://danpelosi.com/recipe/pignoli-cookies/",
     imagePath: "images/cookies/pignoli.jpeg",
     year: [2023, 2024],
     flavor: ["nuts"]
