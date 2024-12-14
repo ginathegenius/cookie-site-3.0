@@ -5,7 +5,7 @@ export const cookieData = [
     imagePath: "images/cookies/gochujang-caramel.png",
     allergies: ["gluten", "eggs"],
     year: [2023, 2024],
-    flavor: ["savory"]
+    flavor: ["savory","spice"]
   },
   {
     name: "Cranberry, Orange, Pecan Pinwheels",
@@ -13,7 +13,7 @@ export const cookieData = [
     allergies: ["pecan", "eggs", "gluten"],
     imagePath: "images/cookies/cranberry-orange-pinwheels.png",
     year: [2023],
-    flavor: ["fruit", "nuts"]
+    flavor: ["fruit", "nutty"]
   },
   {
     name: "Orange Pistachio and Chocolate Shortbread",
@@ -21,7 +21,7 @@ export const cookieData = [
     allergies: ["pistachio", "eggs", "gluten"],
     imagePath: "images/cookies/pistachio-orange-shortbread.jpeg",
     year: [2023, 2024],
-    flavor: ["fruit", "nut", "chocolate"]
+    flavor: ["fruit", "nutty", "chocolate"]
   },
   {
     name: "Dirty Chai Earthquake",
@@ -53,7 +53,7 @@ export const cookieData = [
     link: "https://www.bhg.com/almond-pastry-pillows-6822535",
     imagePath: "images/cookies/pastry-pillows.jpeg",
     year: [2023, 2024],
-    flavor: ["fruit", "nuts"]
+    flavor: ["fruit", "nutty"]
   },
   {
     name: "Chocolate Pecan Thumbprints",
@@ -61,7 +61,7 @@ export const cookieData = [
     link: "https://www.tasteofhome.com/recipes/chocolate-caramel-thumbprints/",
     imagePath: "images/cookies/caramel-pecan.png",
     year: [2023, 2024],
-    flavor: ["nuts","chocolate","caramel"]
+    flavor: ["nutty","chocolate","caramel"]
   },
   {
     name: "Anise Cookies",
@@ -77,7 +77,7 @@ export const cookieData = [
     link: "https://www.bonappetit.com/recipe/miso-almond-butter-cookies",
     imagePath: "images/cookies/miso-almond.jpg",
     year: [2023, 2024],
-    flavor: ["nuts","savory"]
+    flavor: ["nutty","savory"]
   },
   {
     name: "Pignoli (Italian Macaron)",
@@ -85,7 +85,7 @@ export const cookieData = [
     link: "https://danpelosi.com/recipe/pignoli-cookies/",
     imagePath: "images/cookies/pignoli.jpeg",
     year: [2023, 2024],
-    flavor: ["nuts"]
+    flavor: ["nutty"]
   },
   {
     name: "Key Lime Icebox",
@@ -117,7 +117,7 @@ export const cookieData = [
     link: "https://www.food.com/recipe/scandinavian-almond-bars-103703",
     imagePath: "images/cookies/scandinavian-almond.png",
     year: [2023, 2024],
-    flavor: ["nuts"]
+    flavor: ["nutty"]
   },
   {
     name: "Pistachio Thumbprints",
@@ -125,7 +125,7 @@ export const cookieData = [
     link: "https://www.loveandoliveoil.com/2019/03/chocolate-pistachio-cream-thumbprints.html",
     imagePath: "images/cookies/pistachio-thumbprint.png",
     year: [2023],
-    flavor: ["nuts"]
+    flavor: ["nutty"]
   },
   {
     name: "Peanut Butter Munchies",
@@ -133,7 +133,7 @@ export const cookieData = [
     link: "https://www.bhg.com/recipe/cookies/peanut-butter-munchies/",
     imagePath: "images/cookies/pb-choc-munchies.png",
     year: [2023, 2024],
-    flavor: ["nuts", "chocolate"]
+    flavor: ["nutty", "chocolate"]
   },
   {
     name: "Pepper Jelly Cornmeal Cups",
@@ -149,7 +149,7 @@ export const cookieData = [
     link: "https://www.shelovesbiscotti.com/chocolate-hazelnut-biscotti/#recipe",
     imagePath: "images/cookies/chocolate-biscotti.jpg",
     year: [2024],
-    flavor: ["chocolate","nuts"]
+    flavor: ["chocolate","nutty"]
   },
   {
     name: "Date Rolled Cookies",
@@ -161,15 +161,15 @@ export const cookieData = [
   },
   {
     name: "Pecan Pie Truffles",
-    allergies: ["gluten", "alcohol"],
+    allergies: ["gluten", "alcohol", "pecan"],
     link: "https://cooking.nytimes.com/recipes/1015214-pecan-pie-truffles",
     imagePath: "images/cookies/pecan-pie.jpeg",
     year: [2024],
-    flavor: ["maple","nuts"]
+    flavor: ["maple","nutty"]
   },
   {
     name: "Matcha Black Sesame Shortbreads",
-    allergies: ["gluten", "egg"],
+    allergies: ["gluten", "egg", "sesame"],
     link: "https://cooking.nytimes.com/recipes/1026330-matcha-black-sesame-shortbreads",
     imagePath: "images/cookies/matcha-black-sesame.jpeg",
     year: [2024],
@@ -177,7 +177,7 @@ export const cookieData = [
   },
   {
     name: "Neapolitan Sugar Cookie",
-    allergies: ["gluten", "egg"],
+    allergies: ["gluten", "egg", "strawberry"],
     link: "",
     imagePath: "images/cookies/neapolitan-sugar.png",
     year: [2024],
@@ -189,7 +189,7 @@ export const cookieData = [
     link: "",
     imagePath: "images/cookies/White-Chocolate-Raspberry-Cookies.jpg",
     year: [2024],
-    flavor: ["fruit"]
+    flavor: ["fruit","chocolate"]
   },
   {
     name: "Vanilla Brown Sugar Oatmeal Latte Cookies with Espresso Icing",

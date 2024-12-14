@@ -18,13 +18,15 @@ export default function Cookies() {
     espresso: false,
     milk: false,
     almond: false,
-    peanuts: false,
+    peanut: false,
     raspberry: false,
+    strawberry: false,
+    hazelnut: false
   });
   
   const [flavorFilters, setFlavorFilters] = useState({
     chocolate: false,
-    nuts: false, 
+    nutty: false, 
     fruit: false, 
     savory: false,
     coffee: false
