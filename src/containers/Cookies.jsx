@@ -6,8 +6,10 @@ import { cookieData } from "../data/cookieData";
 import FilterComponent from '../components/FilterComponent';
 
 export default function Cookies() {
-  const [yearFilters, setyearFilters] = useState([2023,2024]);
-  
+  const [yearFilters, setyearFilters] = useState({
+    2023: false,
+    2024: true
+  });  
   const [allergyFilters, setAllergyFilters] = useState({
     gluten: false,
     eggs: false,
@@ -34,7 +36,10 @@ export default function Cookies() {
   }, {}));
   
   const handleYearChange = (event) => {
-    setyearFilters([event.target.checked] ? [2023] : null);
+    setyearFilters({
+      ...yearFilters,
+      [event.target.name]: event.target.checked,
+    });
   };
   const handleAllergyChange = (event) => {
     setAllergyFilters({
@@ -57,10 +62,8 @@ export default function Cookies() {
     console.log(upvotes[cookieName]);
   };
   const filteredCookies = cookieData.filter((cookie) => {
-    // const matchesYear = yearFilters ? cookie.year === yearFilters : true;
-    const matchesYear = Object.keys(yearFilters).every(
-      (year) => !yearFilters[year] || !cookie.year.includes(year)
-    );
+    const yearsSelected = Object.keys(yearFilters).filter(key => yearFilters[key]);
+    const matchesYear = yearsSelected.every(year => cookie.year.includes(parseInt(year)));
     const matchesAllergies = Object.keys(allergyFilters).every(
       (allergy) => !allergyFilters[allergy] || !cookie.allergies.includes(allergy)
     );
@@ -74,8 +77,7 @@ export default function Cookies() {
       <div className="ml-2">
         <h2 className="page-header">Cookie Catalog</h2>
         <div>
-{            console.log({yearFilters})
-}            <FilterComponent
+              <FilterComponent
                 yearFilters={yearFilters}
                 handleYearChange={handleYearChange}
                 allergyFilters={allergyFilters}

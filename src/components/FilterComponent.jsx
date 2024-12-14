@@ -6,12 +6,13 @@ const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handle
     return (
         <div>
             <Accordion title="Year">
-                {yearFilters.map((year) => (
+                {Object.keys(yearFilters).map((year) => (
                     <div key={year} className="form-check">
                     <label className="form-check-label" htmlFor={`flexCheckDefault${year}`}>
                     <input
                         className="form-check-input"
                         type="checkbox"
+                        name={year}
                         id={`flexCheckDefault${year}`}
                         checked={yearFilters[year]}
                         onChange={handleYearChange}
