@@ -14,3 +14,8 @@
 .cookie-col {
     margin-bottom: 1rem;
 }
+
+a.btn.btn-dark.recipe {
+    background-color: #bc4749;
+    border-color: #bc4749;
+}

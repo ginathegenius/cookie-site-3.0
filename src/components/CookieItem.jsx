@@ -23,7 +23,7 @@ export default function CookieItem({cookies, upvotes, onUpvote}) {
                       <p className="allergies">Allergies: {object.allergies.join(", ")}</p>
                     )}
                 </Card.Text>
-                <Button variant="light" href={object.link} target="_blank" disabled={!object.link}>Recipe</Button>
+                <Button className="recipe" variant="dark" href={object.link} target="_blank" disabled={!object.link}>Recipe</Button>
             </Card.Body>
         </Card>
         </Col>
