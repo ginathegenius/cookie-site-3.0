@@ -5,7 +5,9 @@ import "./Home.css";
 import { cookieData } from "../data/cookieData";
 import FilterComponent from '../components/FilterComponent';
 import { Dropdown, Row, Col } from 'react-bootstrap';
+import ReactGA from "react-ga4";
 
+ReactGA.initialize('G-JK6WWF2W6Q');
 export default function Cookies() {
   const [yearFilters, setyearFilters] = useState({
     2023: false,
