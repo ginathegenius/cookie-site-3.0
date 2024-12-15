@@ -5,5 +5,15 @@
 button#sort-dd {
     background-color: #6a994e;
     border: #6a994e;
+    height: 2.5em;
 }
-
+.leftButton {
+    background-color: #6a994e !important;
+    border: #6a994e !important;
+    color:white !important;
+    height: 2.5em !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: #bc4749 !important;
+    color: white !important;
+}

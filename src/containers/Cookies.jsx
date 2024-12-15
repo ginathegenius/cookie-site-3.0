@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import "./Home.css";
 import { cookieData } from "../data/cookieData";
 import FilterComponent from '../components/FilterComponent';
-import { Dropdown, Row, Col } from 'react-bootstrap';
+import { Dropdown, Row, Col, Button } from 'react-bootstrap';
 import ReactGA from "react-ga4";
 
 ReactGA.initialize('G-JK6WWF2W6Q');
@@ -88,6 +88,10 @@ export default function Cookies() {
     if (sortOrder === "desc") return b.name.localeCompare(a.name);
     return 0;
   });
+  const handleFeedbackOnClick = () => {
+    const url = "https://docs.google.com/forms/d/e/1FAIpQLSdwuXGCb9vnwPhjbBBx3d5f_tx31Wok3Wd5r2W3Mr0Vo_7RNQ/viewform?usp=dialog"; // Replace with your desired URL
+    window.open(url, "_blank"); // Open URL in a new tab
+  };
 
     return (
       <div className="ml-2 my-2">
@@ -103,12 +107,16 @@ export default function Cookies() {
         </div>
         
         <Row className="my-1 mx-1 ">
+        <Col className="d-flex justify-content-start">
+          <Button className="leftButton" onClick={handleFeedbackOnClick}>
+                  Rank Cookies
+          </Button>
+        </Col>
           <Col className="d-flex justify-content-end">
             <Dropdown className="">
               <Dropdown.Toggle variant="primary" id="sort-dd">
                 Sort: {sortOrder === "asc" ? "A-Z" : sortOrder === "desc" ? "Z-A" : "None"}
               </Dropdown.Toggle>
-
               <Dropdown.Menu>
                 <Dropdown.Item onClick={() => setSortOrder("asc")}>
                   Sort A-Z
@@ -123,7 +131,7 @@ export default function Cookies() {
             </Dropdown>
           </Col>
         </Row>
-        <div>
+        <div style={{marginTop: '1em'}}>
         <CookieItem cookies={sortedCookies} upvotes={upvotes} onUpvote={handleUpvote}/>
         </div>
       </div>
