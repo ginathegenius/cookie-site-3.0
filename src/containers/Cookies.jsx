@@ -4,6 +4,7 @@ import React, {useState} from "react";
 import "./Home.css";
 import { cookieData } from "../data/cookieData";
 import FilterComponent from '../components/FilterComponent';
+import { Dropdown, Row, Col } from 'react-bootstrap';
 
 export default function Cookies() {
   const [yearFilters, setyearFilters] = useState({
@@ -36,7 +37,10 @@ export default function Cookies() {
     acc[cookie.name] = 0;
     return acc;
   }, {}));
-  
+
+  // Sorting state
+  const [sortOrder, setSortOrder] = useState(""); // 'asc' or 'desc'
+
   const handleYearChange = (event) => {
     setyearFilters({
       ...yearFilters,
@@ -75,6 +79,13 @@ export default function Cookies() {
     return matchesYear && matchesAllergies && matchesFlavor;
   });
 
+  // Apply sorting logic
+  const sortedCookies = [...filteredCookies].sort((a, b) => {
+    if (sortOrder === "asc") return a.name.localeCompare(b.name);
+    if (sortOrder === "desc") return b.name.localeCompare(a.name);
+    return 0;
+  });
+
     return (
       <div className="ml-2">
         <div>
@@ -87,8 +98,30 @@ export default function Cookies() {
                 handleFlavorChange={handleFlavorChange}
             />
         </div>
+              {/* Sorting Dropdown */}
+      <Row className="my-3">
+        <Col className="d-flex justify-content-end">
+          <Dropdown>
+            <Dropdown.Toggle variant="primary" id="dropdown-basic">
+              Sort: {sortOrder === "asc" ? "A-Z" : sortOrder === "desc" ? "Z-A" : "None"}
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item onClick={() => setSortOrder("asc")}>
+                Sort A-Z
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setSortOrder("desc")}>
+                Sort Z-A
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setSortOrder("")}>
+                Reset Sort
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Col>
+      </Row>
         <div>
-        <CookieItem cookies={filteredCookies} upvotes={upvotes} onUpvote={handleUpvote}/>
+        <CookieItem cookies={sortedCookies} upvotes={upvotes} onUpvote={handleUpvote}/>
         </div>
       </div>
     );

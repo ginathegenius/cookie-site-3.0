@@ -11,7 +11,7 @@ export default function CookieItem({cookies, upvotes, onUpvote}) {
     // <div className="cookie-container">
     <div>
     <Container fluid>
-      <Row xs={2} md={3} className="g-4">
+      <Row xs={1} sm={2} md={3} className="g-4">
         {cookies.map((object, index) => (
           <Col key={index} className="cookie-col">
           <Card className="card-height cookie-card">
@@ -24,10 +24,6 @@ export default function CookieItem({cookies, upvotes, onUpvote}) {
                     )}
                 </Card.Text>
                 <Button variant="light" href={object.link} target="_blank" disabled={!object.link}>Recipe</Button>
-                  {/* <div className="upvote-section">
-                    <Button variant="primary" onClick={() => onUpvote(object.name)}>Upvote</Button>
-                    <span className="upvote-count">{upvotes[object.name]}</span>
-                  </div> */}
             </Card.Body>
         </Card>
         </Col>
