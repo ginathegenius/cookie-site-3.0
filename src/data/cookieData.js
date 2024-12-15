@@ -169,7 +169,7 @@ export const cookieData = [
   },
   {
     name: "Matcha Black Sesame Shortbreads",
-    allergies: ["gluten", "egg", "sesame"],
+    allergies: ["gluten", "eggs", "sesame"],
     link: "https://cooking.nytimes.com/recipes/1026330-matcha-black-sesame-shortbreads",
     imagePath: "images/cookies/matcha-black-sesame.jpeg",
     year: [2024],
@@ -177,7 +177,7 @@ export const cookieData = [
   },
   {
     name: "Neapolitan Sugar Cookie",
-    allergies: ["gluten", "egg", "strawberry"],
+    allergies: ["gluten", "eggs", "strawberry"],
     link: "",
     imagePath: "images/cookies/neapolitan-sugar.png",
     year: [2024],
@@ -185,7 +185,7 @@ export const cookieData = [
   },
   {
     name: "White Chocolate Raspberry Thumbprint Cookies",
-    allergies: ["egg", "gluten", "raspberry"],
+    allergies: ["eggs", "gluten", "raspberry"],
     link: "",
     imagePath: "images/cookies/White-Chocolate-Raspberry-Cookies.jpg",
     year: [2024],
@@ -198,5 +198,13 @@ export const cookieData = [
     imagePath: "images/cookies/oatmeal-latte.png",
     year: [2024],
     flavor: ["coffee"]
+  },
+  {
+    name: "Gingerbread Biscotti",
+    allergies: ["eggs", "gluten"],
+    link: "https://smittenkitchen.com/2014/12/gingerbread-biscotti/",
+    imagePath: "images/cookies/gingerbread-biscotti.png",
+    year: [2024],
+    flavor: ["spice"]
   },
 ];
