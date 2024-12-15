@@ -12,17 +12,18 @@ export default function Cookies() {
     2024: true
   });  
   const [allergyFilters, setAllergyFilters] = useState({
-    gluten: false,
+    alcohol: false,
+    almond: false,
     eggs: false,
+    espresso: false,
+    gluten: false,
+    hazelnut: false,
+    milk: false,
+    peanut: false,
     pecan: false,
     pistachio: false,
-    espresso: false,
-    milk: false,
-    almond: false,
-    peanut: false,
     raspberry: false,
-    strawberry: false,
-    hazelnut: false
+    strawberry: false    
   });
   
   const [flavorFilters, setFlavorFilters] = useState({
