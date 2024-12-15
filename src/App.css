@@ -1,7 +1,28 @@
 nav.navbar-dark.bg-dark.custom-navbar {
   background-color: #386641 !important;
+  /* font-family: "WonderfulChristmas"; */
+  font-family: "LastChristmas";
+  /* font-family: "ChristmasTreeLights"; */
+  font-size: 32px;
 }
 .App {
   background-color: #f2e8cf;
 }
 
+@font-face {
+  font-family: "ChristmasTreeLights";
+  src: local("ChristmasTreeLights"),
+    url("./assets/font/ChristmasTreeLights.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "LastChristmas";
+  src: local("LastChristmas"),
+    url("./assets/font/LastChristmas.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WonderfulChristmas";
+  src: local("WonderfulChristmas"),
+    url("./assets/font/WonderfulChristmas.otf") format("opentype");
+}

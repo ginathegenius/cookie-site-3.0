@@ -8,6 +8,10 @@ import "./App.css";
 import Routing from './Routing';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import "./assets/font/ChristmasTreeLights.otf";
+import "./assets/font/LastChristmas.otf";
+import "./assets/font/WonderfulChristmas.otf";
+
 // Amplify.configure(outputs);
 
 export default function App({ Component, pageProps }) {
