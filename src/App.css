@@ -3,7 +3,9 @@ nav.navbar-dark.bg-dark.custom-navbar {
   /* font-family: "WonderfulChristmas"; */
   font-family: "LastChristmas";
   /* font-family: "ChristmasTreeLights"; */
-  font-size: 32px;
+}
+a.navbar-brand {
+  font-size: 28px;
 }
 .App {
   background-color: #f2e8cf;
