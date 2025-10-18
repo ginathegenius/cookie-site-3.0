@@ -4,7 +4,7 @@ export const cookieData = [
     link: "https://cooking.nytimes.com/recipes/1023675-gochujang-caramel-cookies",
     imagePath: "images/cookies/gochujang-caramel.png",
     allergies: ["gluten", "eggs"],
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["savory","spice"]
   },
   {
@@ -20,7 +20,7 @@ export const cookieData = [
     link: "https://cooking.nytimes.com/recipes/1023681-orange-pistachio-and-chocolate-shortbread?smid=ck-recipe-iOS-share",
     allergies: ["pistachio", "eggs", "gluten"],
     imagePath: "images/cookies/pistachio-orange-shortbread.jpeg",
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["fruit", "nutty", "chocolate"]
   },
   {
@@ -52,7 +52,7 @@ export const cookieData = [
     allergies: ["almond", "raspberry", "eggs", "gluten"],
     link: "https://www.bhg.com/almond-pastry-pillows-6822535",
     imagePath: "images/cookies/pastry-pillows.jpeg",
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["fruit", "nutty"]
   },
   {
@@ -60,7 +60,7 @@ export const cookieData = [
     allergies: ["gluten", "pecan", "eggs"],
     link: "https://www.tasteofhome.com/recipes/chocolate-caramel-thumbprints/",
     imagePath: "images/cookies/caramel-pecan.png",
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["nutty","chocolate","caramel"]
   },
   {
@@ -68,7 +68,7 @@ export const cookieData = [
     allergies: ["eggs", "gluten"],
     link: "",
     imagePath: "images/cookies/anise.jpeg",
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["spice"]
   },
   {
@@ -84,7 +84,7 @@ export const cookieData = [
     allergies: ["pine nut", "almond", "eggs", "alcohol"],
     link: "https://danpelosi.com/recipe/pignoli-cookies/",
     imagePath: "images/cookies/pignoli.jpeg",
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["nutty"]
   },
   {
@@ -116,7 +116,7 @@ export const cookieData = [
     allergies: ["gluten", "almond", "eggs"],
     link: "https://www.food.com/recipe/scandinavian-almond-bars-103703",
     imagePath: "images/cookies/scandinavian-almond.png",
-    year: [2023, 2024],
+    year: [2023, 2024, 2025],
     flavor: ["nutty"]
   },
   {
@@ -148,7 +148,7 @@ export const cookieData = [
     allergies: ["gluten", "eggs", "hazelnut"],
     link: "https://www.shelovesbiscotti.com/chocolate-hazelnut-biscotti/#recipe",
     imagePath: "images/cookies/chocolate-biscotti.jpg",
-    year: [2024],
+    year: [2024, 2025],
     flavor: ["chocolate","nutty"]
   },
   {
@@ -188,7 +188,7 @@ export const cookieData = [
     allergies: ["eggs", "gluten", "raspberry"],
     link: "",
     imagePath: "images/cookies/White-Chocolate-Raspberry-Cookies.jpg",
-    year: [2024],
+    year: [2024, 2025],
     flavor: ["fruit","chocolate"]
   },
   {
@@ -196,7 +196,7 @@ export const cookieData = [
     allergies: ["coffee", "gluten","eggs"],
     link: "https://www.ambitiouskitchen.com/oatmeal-latte-cookies/",
     imagePath: "images/cookies/oatmeal-latte.png",
-    year: [2024],
+    year: [2024, 2025],
     flavor: ["coffee"]
   },
   {
@@ -204,7 +204,7 @@ export const cookieData = [
     allergies: ["eggs", "gluten"],
     link: "https://smittenkitchen.com/2014/12/gingerbread-biscotti/",
     imagePath: "images/cookies/gingerbread-biscotti.png",
-    year: [2024],
+    year: [2024, 2025],
     flavor: ["spice"]
   },
 ];

@@ -11,7 +11,8 @@ ReactGA.initialize('G-JK6WWF2W6Q');
 export default function Cookies() {
   const [yearFilters, setyearFilters] = useState({
     2023: false,
-    2024: true
+    2024: false,
+    2025: true
   });  
   const [allergyFilters, setAllergyFilters] = useState({
     alcohol: false,

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AccordionFilter.css'; // Ensure you have the styles for the accordion
+import './AccordionFilter.css'; 
 
 const Accordion = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
