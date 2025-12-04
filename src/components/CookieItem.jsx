@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Badge from 'react-bootstrap/Badge';
 
 export default function CookieItem({cookies, upvotes, onUpvote}) {
   return (
@@ -23,6 +24,13 @@ export default function CookieItem({cookies, upvotes, onUpvote}) {
                       <p className="allergies">Allergies: {object.allergies.join(", ")}</p>
                     )}
                 </Card.Text>
+                <h6>
+                  {object.year.map((year, yearIndex) => (
+                    <Badge key={yearIndex} bg="light" text="dark" className="me-1">
+                      {year === 2025 && object.year.length === 1 ? 'New' : year}
+                    </Badge>
+                  ))}
+                </h6>
                 <Button className="recipe" variant="dark" href={object.link} target="_blank" disabled={!object.link}>Recipe</Button>
             </Card.Body>
         </Card>

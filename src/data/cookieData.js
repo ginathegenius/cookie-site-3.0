@@ -180,7 +180,7 @@ export const cookieData = [
     allergies: ["gluten", "eggs", "strawberry"],
     link: "",
     imagePath: "images/cookies/neapolitan-sugar.png",
-    year: [2024],
+    year: [2024, 2025],
     flavor: ["fruit","chocolate"]
   },
   {
@@ -206,5 +206,13 @@ export const cookieData = [
     imagePath: "images/cookies/gingerbread-biscotti.png",
     year: [2024, 2025],
     flavor: ["spice"]
+  },
+  {
+    name: "Mortadella Cookies",
+    allergies: ["eggs", "gluten","strawberry","pistachio","macadamia"],
+    link: "https://smittenkitchen.com/2014/12/gingerbread-biscotti/",
+    imagePath: "images/cookies/morty-d.png",
+    year: [2025],
+    flavor: ["fruit","nutty"]
   },
 ];
