@@ -1,5 +1,21 @@
 export const cookieData = [
   {
+    name: "Mortadella Cookies",
+    allergies: ["eggs", "gluten","strawberry","pistachio","macadamia"],
+    link: "https://cooking.nytimes.com/recipes/1027495-mortadella-cookies",
+    imagePath: "images/cookies/morty-d.png",
+    year: [2025],
+    flavor: ["fruit","nutty"]
+  },
+  {
+    name: "Chewy Chai Gingerbread",
+    allergies: ["eggs", "gluten"],
+    link: "https://cooking.nytimes.com/recipes/765560374-chewy-chai-gingerbread",
+    imagePath: "images/cookies/chewy-chai-gingerbread.png",
+    year: [2025],
+    flavor: ["spice"]
+  },
+  {
     name: "Gochujang Caramel",
     link: "https://cooking.nytimes.com/recipes/1023675-gochujang-caramel-cookies",
     imagePath: "images/cookies/gochujang-caramel.png",
@@ -207,12 +223,5 @@ export const cookieData = [
     year: [2024, 2025],
     flavor: ["spice"]
   },
-  {
-    name: "Mortadella Cookies",
-    allergies: ["eggs", "gluten","strawberry","pistachio","macadamia"],
-    link: "https://smittenkitchen.com/2014/12/gingerbread-biscotti/",
-    imagePath: "images/cookies/morty-d.png",
-    year: [2025],
-    flavor: ["fruit","nutty"]
-  },
+
 ];
