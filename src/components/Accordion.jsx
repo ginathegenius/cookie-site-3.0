@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import './AccordionFilter.css'; 
 
 const Accordion = ({ title, children }) => {
@@ -16,6 +17,11 @@ const Accordion = ({ title, children }) => {
             {isOpen && <div className="accordion-body">{children}</div>}
         </div>
     );
+};
+
+Accordion.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node,
 };
 
 export default Accordion;
