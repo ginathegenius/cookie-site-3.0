@@ -4,7 +4,7 @@ A React and Vite site for browsing the yearly cookie catalog.
 
 ## Local development
 
-Use Node.js 22 (see `.nvmrc`) and npm:
+Use Node.js 24 (see `.nvmrc`) and npm:
 
 ```sh
 npm ci
