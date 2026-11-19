@@ -1,10 +1,9 @@
-import React from "react";
 import "./Pignoli.css";
 
 export default function Pignoli() {
   return (
     <div className="Pignoli">
-      <h3 className="m-3">Maria Galvagno's Pignoli Cookies</h3>
+      <h3 className="m-3">Maria Galvagno&apos;s Pignoli Cookies</h3>
       <div className="m-3">
         <ul>
         <li>3 egg whites</li>

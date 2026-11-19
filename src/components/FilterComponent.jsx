@@ -1,10 +1,8 @@
-import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-// import Accordion from './Accordion'; // Import the Accordion component
+import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handleAllergyChange, flavorFilters, handleFlavorChange }) => {
-    console.log({yearFilters})
     return (
         
         <div>
@@ -90,6 +88,15 @@ const FilterComponent = ({ yearFilters, handleYearChange, allergyFilters, handle
             </Container>
         </div>
     );
+};
+
+FilterComponent.propTypes = {
+    yearFilters: PropTypes.objectOf(PropTypes.bool).isRequired,
+    handleYearChange: PropTypes.func.isRequired,
+    allergyFilters: PropTypes.objectOf(PropTypes.bool).isRequired,
+    handleAllergyChange: PropTypes.func.isRequired,
+    flavorFilters: PropTypes.objectOf(PropTypes.bool).isRequired,
+    handleFlavorChange: PropTypes.func.isRequired,
 };
 
 export default FilterComponent;
