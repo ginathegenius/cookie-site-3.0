@@ -28,6 +28,10 @@ This runs ESLint, the Node test suite, and a production build. Use `npm run prev
 
 For the annual Q4 update, check recipe links and image paths, confirm the latest-year filter and catalog content, and verify the deployed site after the production deployment completes.
 
+Favorites are saved in the current browser and do not sync across devices. If you add or rename a cookie, keep its `id` stable so existing favorites remain attached to it.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the step-by-step seasonal update guide and a cookie record example.
+
 ## CI and hosting
 
 GitHub Actions runs `npm ci` and `npm run check` for pull requests and pushes to `main`. Amplify Hosting uses `amplify.yml` to install dependencies, build the Vite app, and publish `dist/`.

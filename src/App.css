@@ -8,6 +8,7 @@ a.navbar-brand {
   font-size: 28px;
 }
 .App {
+  min-height: 100vh;
   background-color: #f2e8cf;
 }
 
