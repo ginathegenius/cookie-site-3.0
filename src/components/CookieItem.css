@@ -1,21 +1,121 @@
 .cookie-card-img {
-    height: 200px; /* Set a fixed height for the images */
-    object-fit: cover; /* Maintain aspect ratio and crop the image */
+    height: 200px;
+    object-fit: cover;
 } 
 .allergies {
     font-style: italic;
     color: gray;
 }
 .cookie-card {
-    overflow: auto;
-    min-height: 100%;
     height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 .cookie-col {
-    margin-bottom: 1rem;
+    display: flex;
+}
+.cookie-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+.cookie-card .recipe {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 a.btn.btn-dark.recipe {
     background-color: #bc4749;
     border-color: #bc4749;
+}
+
+.cookie-image-wrapper {
+    position: relative;
+}
+
+.cookie-favorite-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.55rem;
+    place-items: center;
+    border: 1px solid #6a994e !important;
+    border-radius: 50%;
+    background: #6a994e !important;
+    color: #fff !important;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.cookie-favorite-button:hover {
+    transform: scale(1.08);
+    border-color: #386641 !important;
+    background: #386641 !important;
+    color: #fff !important;
+}
+
+.cookie-favorite-button:focus-visible {
+    outline: 3px solid #386641;
+    outline-offset: 2px;
+}
+
+.favorite-heart {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    transition: fill 120ms ease;
+}
+
+.cookie-favorite-button[aria-pressed="true"] .favorite-heart {
+    fill: currentColor;
+}
+
+.cookie-empty-state {
+    max-width: 42rem;
+    margin: 1.5rem auto;
+    padding: 2.5rem 1.5rem;
+    border: 1px solid rgba(56, 102, 65, 0.2);
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.65);
+    color: #386641;
+    text-align: center;
+}
+
+.cookie-empty-state .favorite-heart {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 auto 0.75rem;
+    color: #bc4749;
+}
+
+.favorites-filter-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    white-space: nowrap;
+    border: 1px solid #6a994e !important;
+    background-color: #6a994e !important;
+    color: #fff !important;
+}
+
+.favorites-filter-button:hover {
+    border-color: #386641 !important;
+    background-color: #386641 !important;
+    color: #fff !important;
+}
+
+.favorites-filter-button .favorite-heart {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.favorite-filter-label {
+    margin-left: 0.4rem;
 }
